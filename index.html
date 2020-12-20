@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!-- responsive  -->
+    <link rel="stylesheet" href="style/responsive.css">
+    <title>Clone Netflix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <img class="logo" src="img/netflix_logo.png" alt="logo netflix">
+        
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Documentários</a>
+        </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div id="filme-principal" class="filme-principal">
+            <div class="container">
+                <h3 class="titulo" id="titulo">Breaking Bad</h3>
+                <p class="descricao" id="descricao">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. </p>
+
+                <div class="botes">
+                    <button role="button" class="botao" onclick="showvideo()">
+                        <i class="fas fa-play"> </i>
+                        Assistir Agora
+                    </button>
+
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"> </i>
+                        Mais Informações
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrousel-filmes">
+        <div class="owl-carousel owl-theme">
+
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)"  onclick="breakingbad()" src="img/breaking_bad.jpg">
+        </div>
+
+           
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="queengambit()" src="img/queen_gambit.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)"  onclick="witcher()" src="img/the_witcher.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="unfortunate_events()"  src="img/unfortunate_events.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="enola()" src="img/enola_holmes.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="lostSpace()" src="img/lost_in_space.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="umbrella()" src="img/the_umbrella_academy.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="strange()" src="img/stranger_things.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="lostWorld()"  src="img/jurassic_world_fallen_kingdom.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="venom()" src="img/venom.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="irishman()" src="img/irishman.jpg">
+        </div>
+
+        
+        <div class="item">
+            <img class="box-filme" onmouseover="contorno(this)" onmouseout ="nocontorno(this)" onclick="maryPoppins()" src="img/mary_poppins.jpg">
+        </div>
+
+        </div>
+    </div>
+
+    <div id=fullvideo style="display:none;">
+        <h3 class="fechar" onclick="closeWin()">X</h3>
+        
+      <div id="myVideo"></div>
+    </div>
+    
+
+   
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>
