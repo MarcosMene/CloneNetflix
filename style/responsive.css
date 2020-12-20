@@ -1,0 +1,74 @@
+
+@media screen and (max-width:360px) {
+    #fullvideo {
+        margin-top:50px;
+        display:block;
+        height: 10%;
+    }
+
+        .fechar {
+            float:right;
+            cursor: pointer;
+            margin:5px;
+            font-size: 15px;
+            
+        }
+
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    header .container {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    
+
+
+}
+
+
+
+
+@media screen and (max-width:820px) {
+    #fullvideo  {
+       
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 60%;
+    
+        }
+
+}
+
+
+
+@media screen and (min-width:1000px) {
+    .descricao {
+        width: 80%;
+    }
+
+    #fullvideo  {
+       
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 90%;
+    
+        }
+
+
+}
+
+
